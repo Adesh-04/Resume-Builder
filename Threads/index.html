@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Resume Generator</title>
+
+					<!-- Bootstrap is here -->
+					
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+					<!-- css is linked here  -->
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+</head>
+<body>
+	<div class="container" id="resumeForm">
+	<h1 class="text-center "> Resume Generator </h1>
+
+	<div class="row">
+		<div class="col-md-6">                         
+
+					 <!-- 1st column -->
+
+			<h4> Personal Information </h4>
+
+			<div class="form">
+				<label for="name"> Your Name </label>
+				<input type="text" id="name" class="form-control" placeholder="Enter here">
+			</div>
+
+			<div class="form mt-2">
+				<label for="contact"> Your Contact  </label>
+				<input type="text" id="contact" class="form-control" placeholder="Enter here">
+			</div>
+
+			<div class="form mt-2">
+				<label for="address"> Your Address  </label>
+				<textarea type="text" rows=3 id="address" class="form-control"nj8 placeholder="Enter here"></textarea>
+			</div>
+
+			<div class="form-group mt-2">
+				<label for="">Select Image </label>
+				<input id="imgfield" type="file" class="form-control ">
+					
+				</input>
+			</div>
+
+			<div class="form">
+				<label for="email"> Your Email </label>
+				<input type="text" id="email" class="form-control" placeholder="Enter here">
+			</div>
+
+			<p style="margin-top:10px;"> Programming Languages</p>
+
+			<div class="form" id="pl">
+				<input type="text" class="form-control plField" placeholder="Enter here">
+			
+
+						<!-- Adding here -->
+
+			<div class="container mt-2 text-center" id="plButton">
+				<button onclick="addNewPl()" class="btn btn-dark btn-small">Add</button>
+			</div>
+		</div>
+
+		</div>
+		<div class="col-md-6">	
+
+                           <!-- 2nd column -->
+
+			<h4> Professional Information </h4>
+
+       		<div class="form mt-2">
+				<label for=""> Objective  </label>
+				<textarea type="text" rows=2 id="objective" class="form-control" placeholder="Enter here"></textarea>
+			</div>
+
+			<div class="form mt-2" id="we">
+				<label for=""> Work Experience  </label>
+				<textarea type="text" rows=2 class="form-control weField" placeholder="Enter here"></textarea>
+			
+							<!-- adding here -->
+
+			<div class="container mt-2 text-center" id="exButton">
+				<button onclick="addNewEx()" class="btn btn-dark btn-small">Add</button>
+			</div>
+		</div>
+
+			<div class="form mt-2" id="ac">
+				<label for="academic"> Academic Qualification  </label>
+				<textarea type="text" rows=2 class="form-control acField" placeholder="Enter here"></textarea>
+			
+							<!-- adding here -->
+
+			<div class="container mt-2 text-center" id="acButton">
+				<button onclick="addNewAc()" class="btn btn-dark btn-small">Add</button>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="container text-center mt-5">
+		<button onclick="generateResume()" class="btn btn-dark btn-lg"> Generate resume </button>
+	</div>
+</div>
+
+
+
+
+
+							<!-- template -->
+
+	 <div class="container" id="resumeTemplate">
+	 	
+	 	<div class="row">
+
+	 		<div class="col-md-3 background">
+
+	 						<!--- 1st column-->
+
+	 			<div class="container">
+	 				<p class="TName1 " id="Tname1"> Adesh Gadekar </p>
+	 			</div>
+
+	 			<img 
+	 				src="https://www.pngitem.com/pimgs/m/35-350426_profile-icon-png-default-profile-picture-png-transparent.png"
+	 				alt=""
+	 				class="img-fluid  myImage "
+	 				id="Timg"
+	 			>
+
+	 			<div class="container">
+	 				<p class="T2"> Contact </p>
+
+	 				<hr>
+
+	 				<p class="T3"> Phone:</p>
+	 				<p id="Tcontact"> 899912221221 </p>
+	 				<p class="T3"> Address:</p>
+	 				<p id="Taddress"> delhi,782 </p>
+	 				<p id="Temail"> <a href="#gmail"> https://www.gmail.com</a></p>
+
+	 				<p class="T3"> Programming Language </p>
+	 				<hr>
+
+	 				<ul id="Tpl">
+	 					<li> C++ </li>
+	 					<li> Python </li>
+	 					<li> JavaScript </li>
+	 				</ul>
+	 				<hr>
+
+
+	 			</div>
+	 		</div>
+
+	 		<div class="col-md-9 ">
+
+							<!-- 2nd column -->	 			
+			
+			<h1 class="text-center mt-5" id="Tname2" style="font-weight: 900;">
+				Adesh Gadekar
+			</h1>
+
+			<div class="card mt-4">
+				<div class="card-header background">
+					
+					<h3> Objective </h3>
+				</div>
+				<div class="card-body">
+					
+					<p id="Tobjective"> lorem100
+					</p>
+				</div>
+			
+	 		</div>
+
+	 		<div class="card mt-4">
+				<div class="card-header background">
+					
+					<h3> Work Experience </h3>
+				</div>
+				<div class="card-body">
+					
+					<ul id="Twe">
+						<li>
+							Lorem isdum  dolor
+						</li>
+						<li>
+							Lorem50
+						</li>
+						<li>
+							Lorem50
+						</li>
+					</ul>
+				</div>
+	 		</div>
+
+	 		<div class="card mt-4">
+				<div class="card-header background">
+					
+					<h3> Academic Qualification </h3>
+				</div>
+				<div class="card-body">
+					
+					<ul id="Tac">
+						<li>
+							Lorem isdum  dolor
+						</li>
+						<li>
+							Lorem50
+						</li>
+						<li>
+							Lorem50
+						</li>
+					</ul>
+				</div>
+	 		</div>
+	 		<div class="container mt-3 text-center">
+	 			<button onclick="printResume()" class="print btn background"> 
+	 				Print
+	 			</button>
+	 		</div>	
+	 </div></div></div>
+
+
+
+								<!-- Pop Up -->
+<div class="PopUp">
+
+<button data-model-target="#model">  Pop Up </button>
+<div class="model" id="model">
+
+	<div class="model-header">
+		<div class="title">Example</div>
+		<button data-close-button class="close-button">&times;</button>
+	</div>
+
+	<div class="model-body">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		
+	</div>
+</div>
+	<div id="overlay"></div>
+
+
+</div>
+
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+	<script src="script.js"></script>                                                                       <!-- JS is linked here -->
+</body>
+</html>

@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		
+	</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+								<!-- Bootstrap is here -->			
+					
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+								<!-- css is linked here  -->
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js" defer></script>
+
+</head>
+<body>
+
+	<div id="homepage">
+
+                                	<!--HOMEPAGE -->
+
+	    <div class="row qq" >                          
+			<div class="col-md-2">	
+
+		  	</div>
+		 
+			<div class="col-md-8 mt-2">
+				<div class=" mt-2 dropdown" data-dropdown >
+
+					<button class="resume" data-dropdown-button style="font-size: 1.4em ;margin-left: 1em;"> Resume</button>
+					<div class="dropdown_menu1">
+						
+						<button onclick="template1()" class="resume">Create Template</button>
+						<hr>
+						<button onclick="build1()" class="resume">Build Resume</button>
+					</div>
+				</div>
+
+				<div class="dropdown" data-dropdown >
+
+					<button class="CV" data-dropdown-button style="font-size: 1.4em ;margin-left: 1em;"> CV</button>
+					<div class="dropdown_menu2">
+						
+						<button onclick="template2()" class="resume">Create Template</button>
+						<hr>
+						<button onclick="build2()" class="resume">Build CV</button>
+					</div>
+				</div>
+
+				<div class="dropdown" data-dropdown >
+
+					<button class="CL" data-dropdown-button style="font-size: 1.4em ;margin-left: 1em;"> Cover Letter</button>
+					<div class="dropdown_menu3">
+						
+						<button onclick="template3()" class="resume">Create Template</button>
+						<hr>
+						<button onclick="build3()" class="resume">Build</button>
+					</div>
+				</div>
+		 	</div>
+		</div>
+		<div class="text"> 
+
+			<p>A Quick and Easy Way to Create Your Professional Resume.Fast and Easy to Use Our resume builder lets you easily and quickly create a resume using our document builder.</p>
+		</div>
+
+		<div class="text-center">
+			<button onclick="build1()" class="btn btn-dark btn-lg rounded-pill"> 
+				Build One Now
+			</button>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+	
+
+	<div id="resumepage">
+		<div class="row d-md-flex qq ">
+			<div class="col-md-2 title">
+			</div>
+
+			<div class="col-md-8 title mt-2">
+				
+					<div class=" mt-2 dropdown" data-dropdown >
+
+						<button class="resume" data-dropdown-button style="font-size: 1.4em ;margin-left: 1em;"> Resume</button>
+						<div class="dropdown_menu1">
+							<button onclick="template1()" class="resume">Create Template</button>
+							<hr>
+							<button onclick="build1()" class="resume">Build Resume</button>
+						</div>
+					</div>
+
+					<div class="dropdown" data-dropdown >
+
+						<button class="CV" data-dropdown-button style="font-size: 1.4em ;margin-left: 1em;"> CV</button>
+						<div class="dropdown_menu2">
+							<button onclick="template2()" class="resume">Create Template</button>
+							<hr>
+							<button onclick="build2()" class="resume">Build CV</button>
+						</div>
+					</div>
+
+					<div class="dropdown" data-dropdown >
+
+						<button class="CL" data-dropdown-button style="font-size: 1.4em ;margin-left: 1em;"> Cover Letter</button>
+						<div class="dropdown_menu3">
+							
+							<button onclick="template3()" class="resume">Create Template</button>
+							<hr>
+							<button onclick="build3()" class="resume">Build</button>
+						</div>
+					</div>
+	  			
+	  		</div>
+
+
+
+
+				<div class="col-md-2 title">
+				<div class="container text-center right-container">
+					<button onclick="home()" class="home">Home</button>
+				</div></div>
+				<br>
+				<br>
+			
+
+	 	<div class="row ">
+	 	 	<div class="col-md-3">
+	 	 		<div class="left-info" id="resumeleft">
+					<div class="scroll-div">
+						
+						<div class="scroll-content">
+
+
+							
+								
+							
+							<p id="add_remove">
+								<button class="button" onclick="click1()"> Add/Remove Sections </button> 
+								<span id="add_remove_content">
+								
+										Address
+									<button onclick="add()" class="btn btn-dark rounded-pill mt-2">Add</button>
+									<button onclick="remove()" class="btn btn-dark rounded-pill mt-2">remove</button>
+									<br>
+								</span>
+							</p>
+							
+							<p id="personal">
+								<button class="button" onclick="click2()"> Personal Info </button>
+
+							</p>
+							
+							<p id="technical">
+								<button class="button" onclick="click3()"> Technical Info </button>
+							</p>
+							
+							<p id="professional">
+								<button class="button" onclick="click4()"> Professional Info </button>
+							</p>
+							
+
+						</div>
+					</div>
+				</div>
+
+				<div class="left-info" id="CVleft">
+					<div class="scroll-div">
+						<div class="scroll-content">
+							
+
+							<p id="add_remove1">
+								<button class="button" onclick="click5()"> Add/Remove Sections </button>
+								<span id="add_remove_content1">
+								
+										Address: 
+									<button onclick="add()" class="btn btn-dark rounded-pill mt-2 ">Add</button>
+									<button onclick="remove()" class="btn btn-dark rounded-pill mt-2">remove</button>
+									<br>
+								</span>
+							</p>
+							
+							
+							
+							<p id="personal">
+								<button class="button" onclick="click6()"> Personal Info </button>
+							</p>
+							<p id="technical">
+								<button class="button" onclick="click7()"> Technical Info </button>
+							</p>
+							<p id="professional">
+								<button class="button" onclick="click8()"> Professional Info </button>
+							</p>
+							
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+	 	 	<div class="col-md-9">
+	 	 		<div class="container resume-box " id="resume-section">
+
+	 	 			<div class="page1" id="page1">
+		 	 			<h4 class="T1"> Personal Information </h4>
+	 	 				<div class="form-group ">
+
+							<label for="imgfield">Select Image(Optional)</label>
+							<input id="imgfield" type="file"  accept="image/*" class="form-control ">
+	 	 				</div>
+
+	 	 				<div class="form mt-2">
+							<label for="name"> Your Name </label>
+							<input type="text" id="name" class="form-control" placeholder="Enter here">
+						</div>
+
+						<div class="form mt-2">
+							<label for="contact"> Your Contact  </label>
+							<input type="text" id="contact" class="form-control" placeholder="Enter here">
+						</div>
+
+						<div class="form mt-2 Iaddress">
+							<label for="address"> Your Address  </label>
+							<textarea type="text" rows=3 id="address" class="form-control"nj8 placeholder="Enter here"></textarea>
+							
+						</div>
+
+						<div class="text-center mt-4">
+							<button onclick="Next1()" class="btn btn-dark btn-lg"> Next </button>
+						</div>
+					</div>
+
+
+
+					<div class="page2" id="page2">
+						<h4 class="T1"> Technical Information </h4>
+						<div class="form mt-4" id="pl">
+							<label for=""> Languages </label>
+							<input type="text" class="form-control plField" placeholder="Enter here">
+						
+
+									<!-- Adding here -->
+
+							<div class="container mt-2 text-center" id="plButton">
+								<button onclick="addNewPl()" class="btn btn-dark btn-small">Add</button>
+							</div>
+						</div>
+
+
+						<div class="form">
+							<label for="email"> Your Email </label>
+							<input type="text" id="email" class="form-control" placeholder="Enter here">
+						</div>
+
+						<div class="form">
+							<label for="email"> Your LinkedIn </label>
+							<input type="text" id="linked" class="form-control" placeholder="Enter here">
+						</div>
+
+						<div class="text-center mt-4">
+							<button onclick="back1()" class="btn btn-dark btn-lg"> back </button>
+							<button onclick="Next2()" class="btn btn-dark btn-lg"> Next </button>
+						</div>
+					</div>
+
+					<div class="page3" id="page3">
+						<h4 class="T1"> Professional Information</h4>
+						<div class="form mt-2">
+							<label for=""> Objective  </label>
+							<textarea type="text" rows=2 id="objective" class="form-control" placeholder="Enter here"></textarea>
+						</div>
+
+						<div class="form mt-2" id="we">
+							<label for=""> Work Experience  </label>
+							<textarea type="text" rows=2 class="form-control weField" placeholder="Enter here"></textarea>
+						
+										<!-- adding here -->
+
+							<div class="container mt-2 text-center" id="exButton">
+								<button onclick="addNewEx()" class="btn btn-dark btn-small">Add</button>
+							</div>
+						</div>
+
+						<div class="form mt-2" id="ac">
+							<label for="academic"> Academic Qualification  </label>
+							<textarea type="text" rows=2 class="form-control acField" placeholder="Enter here"></textarea>
+						
+										<!-- adding here -->
+
+							<div class="container mt-2 text-center" id="acButton">
+								<button onclick="addNewAc()" class="btn btn-dark btn-small">Add</button>
+							</div>
+						</div>
+
+						<div class="text-center mt-4">
+							<button onclick="back2()" class="btn btn-dark btn-lg"> back </button>
+							<button onclick="generateResume()" class="btn btn-dark btn-lg"> submit </button>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+				<div class="container resume-box " id="CV-section">
+
+	 	 			<div class="page1" id="page4">
+		 	 			<h4 class="T1"> Personal Information </h4>
+	 	 				<div class="form-group ">
+
+							<label for="imgfield1">Select Image(Optional)</label>
+							<input id="imgfield1" type="file"  accept="image/*" class="form-control ">
+	 	 				</div>
+
+	 	 				<div class="form mt-2">
+							<label for="name"> Your Name </label>
+							<input type="text" id="name1" class="form-control" placeholder="Enter here">
+						</div>
+
+						<div class="form mt-2">
+							<label for="contact"> Your Contact  </label>
+							<input type="text" id="contact1" class="form-control" placeholder="Enter here">
+						</div>
+
+						<div class="form mt-2 Iaddress">
+							<label for="address"> Your Address  </label>
+							<textarea type="text" rows=3 id="address1" class="form-control"nj8 placeholder="Enter here"></textarea>
+							
+						</div>
+
+						<div class="text-center mt-4">
+							<button onclick="Next3()" class="btn btn-dark btn-lg"> Next </button>
+						</div>
+					</div>
+
+
+
+					<div class="page2" id="page5">
+						<h4 class="T1"> Technical Information </h4>
+						<div class="form mt-4" id="pl1">
+							<label for="plField1"> Languages </label>
+							<input type="text" class="form-control plField1" placeholder="Enter here">
+						
+
+									<!-- Adding here -->
+
+							<div class="container mt-2 text-center" id="plButton1">
+								<button onclick="addNewPl1()" class="btn btn-dark btn-small">Add</button>
+							</div>
+						</div>
+
+
+						<div class="form">
+							<label for="email"> Your Email </label>
+							<input type="text" id="email1" class="form-control" placeholder="Enter here">
+						</div>
+
+						<div class="form">
+							<label for="email"> Your LinkedIn </label>
+							<input type="text" id="linked1" class="form-control" placeholder="Enter here">
+						</div>
+
+						<div class="text-center mt-4">
+							<button onclick="back4()" class="btn btn-dark btn-lg"> back </button>
+							<button onclick="Next4()" class="btn btn-dark btn-lg"> Next </button>
+						</div>
+					</div>
+
+					<div class="page3" id="page6">
+						<h4 class="T1"> Professional Information</h4>
+						<div class="form mt-2">
+							<label for=""> Summary  </label>
+							<textarea type="text" rows=2 id="summary" class="form-control" placeholder="Enter here"></textarea>
+						</div>
+
+						<div class="form mt-2" id="we1">
+							<label for=""> Work Experience  </label>
+							<textarea type="text" rows=2 class="form-control weField1" placeholder="Enter here"></textarea>
+						
+										<!-- adding here -->
+
+							<div class="container mt-2 text-center" id="exButton1">
+								<button onclick="addNewEx1()" class="btn btn-dark btn-small">Add</button>
+							</div>
+						</div>
+
+						<div class="form mt-2" id="ac1">
+							<label for="academic"> Academic Qualification  </label>
+							<textarea type="text" rows=2 class="form-control acField1" placeholder="Enter here"></textarea>
+						
+										<!-- adding here -->
+
+							<div class="container mt-2 text-center" id="acButton1">
+								<button onclick="addNewAc1()" class="btn btn-dark btn-small">Add</button>
+							</div>
+						</div>
+
+						<div class="text-center mt-4">
+							<button onclick="back5()" class="btn btn-dark btn-lg"> back </button>
+							<button onclick="generateCV()" class="btn btn-dark btn-lg"> submit </button>
+						</div>
+					</div>
+				</div>
+
+
+
+
+				<div class="container resume-box" id="CL-section">
+					<div class="page1" id="P1">
+		 	 			<h4 class="T1"> Personal Information </h4>
+	 	 				
+	 	 				<div class="form mt-2">
+							<label for="name"> Your Name </label>
+							<input type="text" id="name" class="form-control" placeholder="Enter here">
+
+						</div>
+
+						<div class="form mt-2">
+							<label for="contact"> Your Contact  </label>
+							<input type="text" id="contact" class="form-control" placeholder="Enter here">
+						</div>
+
+						<div class="form mt-2 Iaddress">
+							<label for="address"> Your Address  </label>
+							<textarea type="text" rows=3 id="address" class="form-control"nj8 placeholder="Enter here"></textarea>
+							
+						</div>
+
+						<div class="text-center mt-4">
+							<button onclick="" class="btn btn-dark btn-lg"> Next </button>
+						</div>
+					</div>
+				</div>
+	
+
+			</div>
+		</div>
+	 	</div>
+ 	</div>
+	 	 
+
+
+
+
+
+
+
+
+
+ 	<div class="mt-4" id="resumetemplate">
+		<div class="row mt-2 " id="back">
+	 		<div class="col-md-3 " id="left1">
+
+	 			
+	 			<figure class="image">
+		 			<img 
+		 				src="https://www.pngitem.com/pimgs/m/35-350426_profile-icon-png-default-profile-picture-png-transparent.png"
+		 				alt=""
+		 				width="200px"
+		 				height="160px"
+		 				id="Timg"
+		 				
+		 			>
+		 		</figure>
+
+	 			<div class="container">
+	 				<hr>
+	 				<p class="T2"> Contact </p>
+
+	 				<hr>
+
+	 				<span class="T3"> Phone: <p id="Tcontact"> 8999122212 </p></span>
+	 				
+	 				<span class="T3 Iaddress"> Address:<p id="Taddress"> delhi,782 </p></span>
+	 				
+	 				<p id="Temail">https://www.gmail.com</p>
+	 				<p id="Tlinked"> https://www.linkedin.com</p>
+
+	 				<hr>
+	 				<p class="T3"> Language </p>
+	 				<hr>
+
+	 				<ul id="Tpl">
+	 					<li> English</li>
+	 					<li> German </li>
+	 					<li> Hindi </li>
+	 				</ul>
+	 				<hr>
+
+
+	 			</div>
+	 		</div>
+
+	 		<div class="col-md-9" id="middle1">
+
+							<!-- 2nd column -->	 			
+			
+				<h1 class="text-center mt-1" id="Tname2">
+					Adesh Gadekar
+				</h1>
+
+				<div class="card mt-4">
+					<div class="card-header background">
+						
+						<h3> Objective </h3>
+					</div>
+					<div class="card-body">
+						
+						<p id="Tobjective"> lorem100
+						</p>
+					</div>
+		 		</div>
+
+		 		<div class="card mt-4">
+					<div class="card-header background">
+						
+						<h3> Work Experience </h3>
+					</div>
+					<div class="card-body">
+						
+						<ul id="Twe">
+							<li>
+								Lorem isdum  dolor
+							</li>
+							<li>
+								Lorem50
+							</li>
+							<li>
+								Lorem50
+							</li>
+						</ul>
+					</div>
+		 		</div>
+
+		 		<div class="card mt-4">
+					<div class="card-header background">
+						
+						<h3> Academic Qualification </h3>
+					</div>
+
+					<div class="card-body">
+						
+						<ul id="Tac">
+							<li>
+								Lorem
+							</li>
+							<li>
+								Lorem50
+							</li>
+							
+						</ul>
+					</div>
+		 		</div>
+		 		<br><br>
+			</div>
+		</div>
+
+		<div class="container mt-3 text-center">			
+ 			<button onclick="back3()" class="btn btn-dark btn-lg"> back </button>
+ 			<button onclick="printResume()" class="print btn btn-dark"> 
+ 				Print
+ 			</button>
+ 		</div>
+	</div>
+
+
+
+
+
+	<div class="mt-4" id="CVtemplate">
+		<div class=" mt-2 row" id="back2">
+			<div class="col-md-3" id="left2">
+				<img 
+ 				src="https://www.pngitem.com/pimgs/m/35-350426_profile-icon-png-default-profile-picture-png-transparent.png"
+ 				alt=""
+ 				class="img-fluid"
+
+ 				id="Timg1">
+
+				<h6>Contact:</h6>
+				<hr>
+				<span class="T3"> Phone: <p id="Tcontact1"> 8999122212 </p></span>
+ 				
+ 				<span class="T3 Iaddress"> Address:<p id="Taddress1"> delhi,782 </p></span>
+ 				
+ 				<p id="Temail1">https://www.gmail.com</p>
+ 				<p id="Tlinked1"> https://www.linkedin.com</p>
+
+ 				<p class="T3"> Language </p>
+ 				<hr>
+
+ 				<ul id="Tpl1">
+ 					<li> English</li>
+ 					<li> German </li>
+ 					<li> Hindi </li>
+ 				</ul>
+ 				<hr>
+
+			</div>
+
+			<div class="col-md-7" id="middle2">
+				<h3 class="text-center" id="Tname3"> Adesh </h3> 
+				<br>
+				<div class="container">
+
+					<div class="card mt-4">
+						<div class="card-header background">
+							
+							<h3> summary </h3>
+						</div>
+						<div class="card-body" id="Tsummary" >
+							lorem10	
+							
+						</div>
+			 		</div>
+
+
+					<div class="card mt-4">
+						<div class="card-header background">
+							
+							<h3> Work Experience </h3>
+						</div>
+						<div class="card-body">
+							
+							<ul id="Twe1">
+								<li>
+									Lorem isdum  dolor
+								</li>
+								<li>
+									Lorem50
+								</li>
+								<li>
+									Lorem50
+								</li>
+							</ul>
+						</div>
+			 		</div>
+					 
+					 <div class="card mt-4">
+						<div class="card-header background">
+							
+							<h3> Academic Info </h3>
+						</div>
+						<div class="card-body">
+							
+							<ul id="Tac1">
+								<li>
+									Lorem isdum  dolor
+								</li>
+								<li>
+									Lorem50
+								</li>
+								<li>
+									Lorem50
+								</li>
+							</ul>
+						</div>
+			 		</div>
+				</div>
+			</div>
+
+				
+
+
+			</div>
+			<div class="container mt-3 text-center">			
+	 			<button onclick="back6()" class="btn btn-dark btn-lg"> back </button>
+	 			<button onclick="printCV()" class="print btn btn-dark"> 
+	 				Print
+	 			</button>
+	 		</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div id="templates">
+		<div class="row d-md-flex qq ">
+
+			<div class="col-md-2 title">
+			</div>
+
+			<div class="col-md-8 title mt-2">
+				
+					<div class="dropdown mt-2" data-dropdown >
+
+
+						<button class="resume" data-dropdown-button style="font-size: 1.4em ;margin-left: 1em;"> Resume</button>
+						<div class="dropdown_menu1">
+							<button onclick="template1()" class="resume">Create Template</button>
+							<hr>
+							<button onclick="build1()" class="resume">Build Resume</button>
+						</div>
+					</div>
+
+					<div class="dropdown" data-dropdown >
+
+						<button class="CV" data-dropdown-button style="font-size: 1.4em ;margin-left: 1em;"> CV</button>
+						<div class="dropdown_menu2">
+							<button onclick="template2()" class="resume">Create Template</button>
+							<hr>
+							<button onclick="build2()" class="resume">Build CV</button>
+						</div>
+					</div>
+
+					<div class="dropdown" data-dropdown >
+
+						<button class="CL" data-dropdown-button style="font-size: 1.4em ;margin-left: 1em;"> Cover Letter</button>
+						<div class="dropdown_menu3">
+							
+							<button onclick="template3()" class="resume">Create Template</button>
+							<hr>
+							<button onclick="build3()" class="resume">Build</button>
+						</div>
+					</div>
+	  			
+	  		</div>
+
+			<div class="col-md-2 title">
+				<div class="container text-center right-container">
+					<button onclick="home1()" class="home">Home</button>
+				</div>
+			</div>
+		
+		
+
+			<div class="row mt-4">
+		 	 	<div class="col-md-3">
+		 	 		<div class="left-info">
+						<div class="scroll-div">
+							<div class="scroll-content">
+								
+								<div id="BRe">
+									<p id="color">
+										<button class="button"> Color</button>
+									</p><br>
+									<p id="personal">
+										<button class="button" onclick="build1()"> Build Resume </button>
+									</p><br>
+
+
+
+								</div>
+
+								<div id="BCV">
+									<p id="color">
+										<button class="button"> Color</button>
+									</p><br>
+									<p id="personal">
+										<button class="button" onclick="build2()"> Build CV </button>
+									</p><br>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 mt-5">
+					<div class="container " id="template-page">
+						
+						<h4 class="">Select profile color:</h4>
+						<br>
+						<div class="colorT">
+							<button onclick="sky()" class="red"> </button>
+							<button onclick="blue()" class="blue"> </button>
+							<button onclick="grey()" class="grey"> </button>
+							<button onclick="green()" class="green"> </button>
+						</div>
+						<br><br>
+
+						<h4 class="">Select content color:</h4>
+						<br>
+						<div class="colorT">
+							<button onclick="sky1()" class="red"> </button>
+							<button onclick="white()" class="white"> </button>
+							<button onclick="grey1()" class="grey"> </button>
+							<button onclick="green1()" class="green"> </button>
+						</div>
+						<br><br>
+
+						
+						
+					</div>
+
+					<div class="container " id="CV-template-page">
+						<div class="" >
+							<h4 class="">Select background color:</h4>
+							<br>
+							<div class="colorT">
+								<button onclick="red1()" class="red"> </button>
+								<button onclick="blue1()" class="blue"> </button>
+								<button onclick="grey1()" class="grey"> </button>
+								<button onclick="green1()" class="green"> </button>
+							</div>
+							<br><br>
+						</div>						
+					</div>
+
+				</div>
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+	
+
+
+
+	
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+	
+</body>
+</html>

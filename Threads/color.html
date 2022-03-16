@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+
+	<style media="screen">
+		:root{
+			--maincolor: #333;
+		}
+		span{
+			width: 50px;
+			height: 50px;
+			margin: 5px;
+			display: inline-block;
+			cursor: pointer;
+
+		}
+		h2{
+			color: var(--maincolor)
+		}
+		.Theme{
+			background-color: var(--maincolor);
+			color: #fff;
+			padding: 3px;
+		}
+
+	</style>
+
+
+
+</head>
+<body>
+<div class="Span">
+	<span data-color= "#f4a261" style="background-color:#f4a261;"></span>
+	<span data-color= "#766322" style="background-color:#766322;"></span>
+	<span data-color= "#f40000" style="background-color:#f40000;"></span>
+	<span data-color= "#24a261" style="background-color:#24a261;"></span>
+</div>
+<h2 > change color</h2>
+
+<div class="Theme" >
+	<h3> change theme</h3>
+</div>
+
+<script type="text/javascript" src="script.js">
+</script>
+
+<script>
+	let spans=document.querySelectorAll("span");
+	console.log(spans);
+	spans.forEach(span => {
+		span.addEventListener("click", function() {
+			document.documentElement.style.setProperty("--maincolor", this.dataset.color);
+		});
+	});
+</script>
+
+</body>
+</html>

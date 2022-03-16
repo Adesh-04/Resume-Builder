@@ -1,0 +1,46 @@
+#add_remove{
+	/*display: none;*/
+	cursor: pointer;
+
+}
+
+
+
+#add_remove_content{
+	display: none;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+}
+
+.Iaddress{
+	/*display: none;*/
+}
+
+#homepage{
+	display: none;
+}
+
+#resumepage{
+	/*display: none;*/
+}
+
+#resumetemplate{
+	display: none;
+}
+
+#resume-section{
+	/*display: none;*/
+}
+
+#page1{
+	/*display: none;*/
+}
+
+#page2{
+	display: none;
+}
+
+#page3{
+	display: none;
+}
+
